@@ -1,7 +1,10 @@
 spring:
   application:
     name: zuul
-    
+  cloud:
+    config:
+      override-none: true
+      
 server:
   port: 3001
   
@@ -36,8 +39,3 @@ management:
     web:
       exposure:
         include: hystrix.stream
-        
-spring:
-  cloud:
-    config:
-      override-none: true
