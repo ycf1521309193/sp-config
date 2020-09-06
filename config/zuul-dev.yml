@@ -5,6 +5,12 @@ spring:
     config:
       override-none: true
       
+  rabbitmq:
+    host: 192.168.129.149
+    port: 5672
+    username: pdadmin
+    password: pdadmin
+      
 server:
   port: 3001
   
